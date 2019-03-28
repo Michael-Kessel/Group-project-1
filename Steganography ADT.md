@@ -19,29 +19,34 @@ binary_array is a sequentially ordered list that stores the binary value of indi
 
 ## Operations
 
+#### encode (in_file, out_file, message_file)
+* Parameters: a bit-map image as a read file, an empty text file to write the encoded pixels to, and a single-line message as a read file.
+* Pseudocode
+  1. Write the lines of the image file to a list.  Originally, our team performed operations on the data taken from the image file and    wrote
+
 #### ascii_to_bin (message_file)
 * Parameter: a text file
 * ascii_to_bin reads a line from its parameter and returns the line's contents as a list of binary numbers.  The list of binary numbers corresponds to the appropriate ASCII characters.  The core of the ascii_to_bin function is the from_bytes function.
 
 #### binary_to_ascii (binary_number)
-Parameter: a string
-binary_to_ascii takes a string of binary numbers as its parameter and returns a string of the corresponding ASCII characters.  The core of the binary_to_ascii function is the from_bytes function.
+* Parameter: a string
+* binary_to_ascii takes a string of binary numbers as its parameter and returns a string of the corresponding ASCII characters.  The core of the binary_to_ascii function is the from_bytes function.
 
 #### hex_to_bin (hex_number)
-Parameter: a string
-hex_to_bin takes a hexidecimal number, cast as a string, and returns a binary number cast as a string.
+* Parameter: a string
+* hex_to_bin takes a hexidecimal number, cast as a string, and returns a binary number cast as a string.
 
 #### bin_to_hex (bin_number)
-Parameter: a string
-bin_to_hex takes a binary number, cast as a string, and returns a hexidecimal number cast as a string.
+* Parameter: a string
+* bin_to_hex takes a binary number, cast as a string, and returns a hexidecimal number cast as a string.
 
 #### dec_to_hex (dec_number)
-Parameter: a string
-dec_to_hex takes a decimal number, cast as a string, and returns a hexidecimal number cast as a string.
+* Parameter: a string
+* dec_to_hex takes a decimal number, cast as a string, and returns a hexidecimal number cast as a string.
 
 #### hex_to_dec (hex_number):
-Parameter: a string
-hex_to_dec takes a hexidecimal number, cast as a string, and returns a decimal number cast as a string. 
+* Parameter: a string
+* hex_to_dec takes a hexidecimal number, cast as a string, and returns a decimal number cast as a string. 
 
 
 
