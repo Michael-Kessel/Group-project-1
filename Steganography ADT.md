@@ -63,6 +63,10 @@ binary_array is a sequentially ordered list that stores the binary value of indi
 # Example
 Please use the included text files to test the steganography ADT.  They showcase the efficacy of the ADT and its overflow and message length features.  Consider the functions that follow:
 
-```encode("pixel_in.txt", "pixel_out.txt", "message_in.txt") 
-decode("pixel_out.txt", "message_out.txt")```
+```encode("pixel_in.txt", "pixel_out.txt", "message_in.txt")``` 
+```decode("pixel_out.txt", "message_out.txt")```
+
+Below is a comparison of sections of the image file before and after the secret message has been encoded:
+
+
 
