@@ -136,6 +136,6 @@ def decode (encoded_message, message_file):
         
     outfile.write("\n" + "The secret message consisted of " + str(message_length) + " bits. \nThere were " + str(overflow) + " bits of information excluded from the message for lack of pixels to store them in.")
 
-encode("pixel_in.txt", "pixel_out.txt", "message_in.txt") 
-decode("pixel_out.txt", "message_out.txt")
+# encode("pixel_in.txt", "pixel_out.txt", "message_in.txt") 
+# decode("pixel_out.txt", "message_out.txt")
 
