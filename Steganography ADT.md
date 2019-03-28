@@ -83,7 +83,11 @@ Here is the output when the encoded pixels have been decoded:
 * Modify the encode, decode, and ascii_to_binary functions to allow the stenography ADT to process messages with multiple lines.
 * Add code to read pixels directly from, and write directly to, PNG images.
 
-## Special Thanks
+## Citation
+
+Special thanks to jfs of stackoverflow, whose code was the inspiration for the core of the ascii_to_binary and bin_to_ascii functions.
+
+[jfs answer](https://stackoverflow.com/questions/7396849/convert-binary-to-ascii-and-vice-versa)
 
 
 
