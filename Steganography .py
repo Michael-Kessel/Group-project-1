@@ -1,9 +1,3 @@
-
-# coding: utf-8
-
-# In[52]:
-
-
 # Team Members: Frederick Wittman, Cameron Peete, Nico Shober, Michael Kessel, and Colin Woods
 # Dr. Hill
 # COSC 2030-01
