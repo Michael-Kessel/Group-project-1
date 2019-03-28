@@ -20,8 +20,8 @@ binary_array is a sequentially ordered list that stores the binary value of indi
 ## Operations
 
 #### ascii_to_bin (message_file)
-Parameter: a text file
-ascii_to_bin reads a line from its parameter and returns the line's contents as a list of binary numbers.  The list of binary numbers corresponds to the appropriate ASCII characters.  The core of the ascii_to_bin function is the from_bytes function.
+* Parameter: a text file
+* ascii_to_bin reads a line from its parameter and returns the line's contents as a list of binary numbers.  The list of binary numbers corresponds to the appropriate ASCII characters.  The core of the ascii_to_bin function is the from_bytes function.
 
 #### binary_to_ascii (binary_number)
 Parameter: a string
