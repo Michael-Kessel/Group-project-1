@@ -1,10 +1,12 @@
-# ADT Summary
+# Steganography Abstract Data Type
+
+## ADT Summary
 
 This abstract data type encodes a secret message in bit-map image files.  After encryption, the image file is indistinguishable from an ordinary list of pixels.  Another major feature is 
 
-# Data Items and Operations
+## Data Items and Operations
 
-## Data Items
+### Data Items
 
 This steganography ADT does not include any global variables.  Major local variables in the operations encode and decode include:
 
@@ -17,7 +19,7 @@ line_as_list stores pixels, which are strings, as sequentially ordered lists
 #### binary_array
 binary_array is a sequentially ordered list that stores the binary value of individual hexidecimal characters.
 
-## Operations
+### Operations
 
 #### encode (in_file, out_file, message_file)
 * Parameters: a bit-map image as a read file, an empty text file to write the encoded pixels to, and a single-line message as a read file.
@@ -60,17 +62,31 @@ binary_array is a sequentially ordered list that stores the binary value of indi
 * Parameter: a string
 * hex_to_dec takes a hexidecimal number, cast as a string, and returns a decimal number cast as a string. 
 
-# Example
+## Example
 Please use the included text files to test the steganography ADT.  They showcase the efficacy of the ADT and its overflow and message length features.  Consider the functions that follow:
 
 ```encode("pixel_in.txt", "pixel_out.txt", "message_in.txt")``` 
 
 ```decode("pixel_out.txt", "message_out.txt")```
 
-Below is a comparison of sections of the image file before and after the secret message has been encoded:
+Below is a comparison of sections of the image file before and after the secret message has been encoded.  Notice that the pixel values have subtly changed in accordance with the scheme described above.  Additionally, note that the green and blue elements of the first pixel reflect the total number of bits in the message to be encoded, in this case "Dr. Hill", and the degree of overflow in bits, respectively.
 
 ![alt text](https://github.com/frederickwittman95/Group-project-1/blob/master/before_encode.PNG "Logo Title Text 1")
-![alt text](https://github.com/frederickwittman95/Group-project-1/blob/master/before_encode.PNG "Logo Title Text 1")
+![alt text](https://github.com/frederickwittman95/Group-project-1/blob/master/after_encode.PNG "Logo Title Text 1")
+
+Here is the output when the encoded pixels have been decoded:
+
+![alt text](https://github.com/frederickwittman95/Group-project-1/blob/master/output.PNG "Logo Title Text 1")
+
+## Suggestions for Improvement
+
+* Modify the encode, decode, and ascii_to_binary functions to allow the stenography ADT to process messages with multiple lines.
+* Add code to read pixels directly from, and write directly to, PNG images.
+
+## Special Thanks
+
+
+
 
 
 
