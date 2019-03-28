@@ -68,7 +68,7 @@ Please use the included text files to test the steganography ADT.  They showcase
 ```decode("pixel_out.txt", "message_out.txt")```
 
 Below is a comparison of sections of the image file before and after the secret message has been encoded:
-![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 1")
+![alt text](https://github.com/frederickwittman95/Group-project-1/blob/master/before_encode.PNG "Logo Title Text 1")
 
 
 
