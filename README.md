@@ -5,6 +5,6 @@
 
 Programming language chosen: Python
 
-First meeting: 3/7/19 - Work out project plans and assignment goals
+First meeting: 3/7/19
 
-Second meeting: 3/10/19 - Further work out collaborative action plan and work out any issues that have arisen
+Second meeting: 3/10/19
