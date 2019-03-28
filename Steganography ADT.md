@@ -64,7 +64,7 @@ binary_array is a sequentially ordered list that stores the binary value of indi
 * hex_to_dec takes a hexidecimal number, cast as a string, and returns a decimal number cast as a string. 
 
 ## Example
-Please use the included text files to test the steganography ADT.  They showcase the efficacy of the ADT and its overflow and message length features.  Consider the functions that follow:
+Consider the the output when the following functions are called:
 
 ```encode("pixel_in.txt", "pixel_out.txt", "message_in.txt")``` 
 
@@ -72,12 +72,12 @@ Please use the included text files to test the steganography ADT.  They showcase
 
 Below is a comparison of sections of the image file before and after the secret message has been encoded.  Notice that the pixel values have subtly changed in accordance with the scheme described above.  Additionally, note that the green and blue elements of the first pixel reflect the total number of bits in the message to be encoded, in this case "Dr. Hill", and the degree of overflow in bits, respectively.
 
-![alt text](https://github.com/frederickwittman95/Group-project-1/blob/master/before_encode.PNG "Logo Title Text 1")
-![alt text](https://github.com/frederickwittman95/Group-project-1/blob/master/after_encode.PNG "Logo Title Text 1")
+![alt text](https://github.com/frederickwittman95/Group-project-1/blob/master/photos/after_encode.PNG "Logo Title Text 1")
+![alt text](https://github.com/frederickwittman95/Group-project-1/blob/master/photos/before_encode.PNG "Logo Title Text 1")
 
 Here is the output when the encoded pixels have been decoded:
 
-![alt text](https://github.com/frederickwittman95/Group-project-1/blob/master/output.PNG "Logo Title Text 1")
+![alt text](https://github.com/frederickwittman95/Group-project-1/blob/master/photos/output.PNG "Logo Title Text 1")
 
 ## Suggestions for Improvement
 
