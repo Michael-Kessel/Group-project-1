@@ -1,3 +1,8 @@
+##### Team Members: Frederick Wittman, Cameron Peete, Nico Shober, Michael Kessel, and Colin Woods
+##### Dr. Hill
+##### COSC 2030-01
+##### 28 March 2019
+
 # Steganography Abstract Data Type
 
 ## ADT Summary
