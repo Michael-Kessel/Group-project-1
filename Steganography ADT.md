@@ -2,7 +2,7 @@
 
 ## ADT Summary
 
-This abstract data type encodes a secret message in bit-map image files.  After encryption, the image file is indistinguishable from an ordinary list of pixels.  Another major feature is 
+This abstract data type encodes secret messages in bit-map image files.  It modifies the red, green, and blue elements of a base pixel file to accomplish this.  The end result is nearly indistinguishable from the base pixel file.
 
 ## Data Items and Operations
 
@@ -29,6 +29,7 @@ binary_array is a sequentially ordered list that stores the binary value of indi
   3. Modify the image file's first pixel's green and blue pixels to contain the length of the message and the amount of overflow in bits, respectively.
   4. With use of an index variable, cycle through the red, green, and blue elements for each new pixel.  Change the least significant bit of the appropriate hexidecimal character to match the corresponding bit in the secret message.
   5. Write the altered pixels to the out-file.
+  6. If the length of the message in bits is shorter than the number of pixels, write the remaining pixels to the out-file in an unaltered state.
 
 #### decode (encoded_message, message_file)
 * Parameters: an image file that contains the secret message and a text file to write the message to
@@ -88,9 +89,3 @@ Here is the output when the encoded pixels have been decoded:
 Special thanks to jfs of stackoverflow, whose code was the inspiration for the core of the ascii_to_binary and bin_to_ascii functions.
 
 [jfs answer](https://stackoverflow.com/questions/7396849/convert-binary-to-ascii-and-vice-versa)
-
-
-
-
-
-
