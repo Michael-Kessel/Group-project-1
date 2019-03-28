@@ -2,7 +2,7 @@
 
 ## ADT Summary
 
-This abstract data type encodes secret messages in bit-map image files.  It modifies the red, green, and blue elements of a base pixel file to accomplish this.  The end result is nearly indistinguishable from the base pixel file.
+This abstract data type encodes secret messages in bit-map image files.  It modifies the red, green, and blue elements of a base pixel file to accomplish this.  The end result is nearly indistinguishable from the base file.
 
 ## Data Items and Operations
 
