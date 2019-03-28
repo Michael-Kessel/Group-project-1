@@ -102,6 +102,9 @@ def encode (in_file, out_file, message_file):
         outfile.write(tmp)
         i = (i + 2) % 6
         
+    infile.close()
+    outfile.close()
+        
 def decode (encoded_message, message_file):
     
     # Open encoded file and message file
@@ -135,7 +138,9 @@ def decode (encoded_message, message_file):
     outfile.write("The secret message is: " + binary_to_ascii(tmp1))
         
     outfile.write("\n" + "The secret message consisted of " + str(message_length) + " bits. \nThere were " + str(overflow) + " bits of information excluded from the message for lack of pixels to store them in.")
-
+    infile.close()
+    outfile.close()
+    
 # encode("pixel_in.txt", "pixel_out.txt", "message_in.txt") 
 # decode("pixel_out.txt", "message_out.txt")
 
